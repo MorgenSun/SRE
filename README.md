@@ -28,7 +28,54 @@ https://drive.google.com/drive/folders/1ZFh8Z3BQ8sfXTvXb1M6ujb6BN06nJ8my?usp=dri
 项目分为 四部分 内容和用途分别如下:
 
 allshell 作为KVM物理机层面初始化脚本
+目录如下:
+initall.sh
+nginx.sh
+revertall.sh
+scpai.sh
+scphosts.sh
+scpshell.sh
+start5.sh
+start5withminio.sh
+start6.sh
+start7-12.sh
+startrest.sh
+
+
 opensourceDockerDeploy 作为 Docker容器化部署 来源于Docker 、 Docker-compose 社区最新版本均适用
-opensourceshell 作为开源运维一键部署脚本
+(待更新)
+
+
+opensourceshell 作为开源运维一键部署脚本 内容如下:
+10mysql.sh
+11hbase.sh
+12sparkonyarn.sh
+13sparkstandalone.sh
+14hive.sh
+15flink.sh
+16maven.sh
+17tomcat9.sh
+18conda.sh
+19nacos.sh
+1java本地安装包安装.sh
+20Jenkins.sh
+21redisstandalone.sh
+22dockerandcompose.sh
+23nginxproxymanager.sh
+24k8sinstall.sh
+25jdk17.sh
+26haproxy.sh
+27keepalived.sh
+28gitlab.sh
+29mysqlclient.sh
+2zookeeper部署脚本.sh
+30miniocluster.sh
+3kafka部署脚本.sh
+4ES.sh
+5rediscluster.sh
+6计算耗时
+8Hadoop.sh
+9hadoopcluster.sh
+runall.sh
 
 
