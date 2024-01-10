@@ -17,8 +17,8 @@
         location = /50x.html {
         }
     }
-生成后 nginx -s reload 或者systemctl restart nginx . 在/lab下放入对应的文件后即可 成功运行如下命令:
-<span style="color:red;">切勿忘记 echo YourIP download.mylab.local >> /etc/hosts 或者在你的DNS供应商管理平台加入相应Host解析</span><br>
+生成后 nginx -s reload 或者systemctl restart nginx . 在/lab下放入对应的文件后即可 成功运行如下命令:<br>
+<span style="color:yellow;">切勿忘记 echo YourIP download.mylab.local >> /etc/hosts 或者在你的DNS供应商管理平台加入相应Host解析</span><br>
 wget http://download.mylab.local:8888/$filename -P $folderpath >/dev/null 2>&1
 
 其次所有涉及的文件均放在Google Drive上 地址如下: 
