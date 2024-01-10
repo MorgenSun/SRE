@@ -35,18 +35,18 @@ revertall.sh<br>
 scpai.sh<br>
 scphosts.sh<br>
 scpshell.sh<br>
-start5.sh
-start5withminio.sh
-start6.sh
-start7-12.sh
-startrest.sh
+start5.sh<br>
+start5withminio.sh<br>
+start6.sh<br>
+start7-12.sh<br>
+startrest.sh<br>
 
 
 opensourceDockerDeploy 作为 Docker容器化部署 来源于Docker 、 Docker-compose 社区最新版本均适用
 (待更新)
 
 
-opensourceshell 作为开源运维一键部署脚本 内容如下:
+opensourceshell 作为开源运维一键部署脚本 内容如下:<br>
 10mysql.sh<br>
 11hbase.sh<br>
 12sparkonyarn.sh<br>
