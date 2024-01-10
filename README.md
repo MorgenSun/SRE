@@ -1,4 +1,4 @@
-<span style="color:black; font-size:24px;">Project SRE/span>
+<span style="color:black; font-size:24px;">Project SRE</span>
 
 项目是为了分享个人在开源运维时的一些一键部署脚本
 
