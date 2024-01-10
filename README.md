@@ -20,7 +20,8 @@ Project SRE
 
 wget http://download.mylab.local:8888/$filename -P $folderpath >/dev/null 2>&1
 
-
+其次所有涉及的文件均放在Google Drive上 地址: 
+https://drive.google.com/drive/folders/1ZFh8Z3BQ8sfXTvXb1M6ujb6BN06nJ8my?usp=drive_link
 
 ### Part2
 ### Part3
