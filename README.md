@@ -27,7 +27,7 @@ https://drive.google.com/drive/folders/1ZFh8Z3BQ8sfXTvXb1M6ujb6BN06nJ8my?usp=dri
 ### 项目介绍
 项目分为 四部分 内容和用途分别如下:
 
-allshell 作为KVM物理机层面初始化脚本
+allshell 作为KVM物理机层面初始化脚本<br>
 目录如下:
 initall.sh
 nginx.sh
