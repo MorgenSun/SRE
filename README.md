@@ -47,7 +47,7 @@ opensourceDockerDeploy 作为 Docker容器化部署 来源于Docker 、 Docker-c
 
 
 opensourceshell 作为开源运维一键部署脚本 内容如下:
-10mysql.sh\n
+10mysql.sh<br>
 11hbase.sh
 12sparkonyarn.sh
 13sparkstandalone.sh
