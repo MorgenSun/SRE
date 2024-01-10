@@ -24,7 +24,14 @@ wget http://download.mylab.local:8888/$filename -P $folderpath >/dev/null 2>&1
 
 https://drive.google.com/drive/folders/1ZFh8Z3BQ8sfXTvXb1M6ujb6BN06nJ8my?usp=drive_link
 
-### Part2
+### 项目介绍
+项目分为 四部分 内容和用途分别如下:
+
+allshell 作为KVM物理机层面初始化脚本
+opensourceDockerDeploy 作为 Docker容器化部署 来源于Docker 、 Docker-compose 社区最新版本均适用
+
+
+
 ### Part3
 ### Part4
 ### Part5
