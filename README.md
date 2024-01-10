@@ -29,11 +29,6 @@ https://drive.google.com/drive/folders/1ZFh8Z3BQ8sfXTvXb1M6ujb6BN06nJ8my?usp=dri
 
 allshell 作为KVM物理机层面初始化脚本
 opensourceDockerDeploy 作为 Docker容器化部署 来源于Docker 、 Docker-compose 社区最新版本均适用
+opensourceshell 作为开源运维一键部署脚本
 
 
-
-### Part3
-### Part4
-### Part5
-### Part6
-### Part7
