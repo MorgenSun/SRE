@@ -21,7 +21,7 @@
 切勿忘记 echo YourIP download.mylab.local >> /etc/hosts 或者在你的DNS供应商管理平台加入相应Host解析<br>
 wget http://download.mylab.local:8888/$filename -P $folderpath >/dev/null 2>&1
 
-其次所有涉及的文件均放在Google Drive上 地址如下: 
+其次所有涉及的离线安装文件均放在Google Drive上 方便自行下载 地址如下: 
 
 https://drive.google.com/drive/folders/1ZFh8Z3BQ8sfXTvXb1M6ujb6BN06nJ8my?usp=drive_link
 
