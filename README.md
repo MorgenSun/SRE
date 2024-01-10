@@ -16,7 +16,8 @@ Project SRE
         location = /50x.html {
         }
     }
-生成后 nginx -s reload 或者systemctl restart nginx . 在/lab下放入对应的文件后即可
+生成后 nginx -s reload 或者systemctl restart nginx . 在/lab下放入对应的文件后即可 成功运行如下命令:
+
 wget http://download.mylab.local:8888/$filename -P $folderpath >/dev/null 2>&1
 
 
