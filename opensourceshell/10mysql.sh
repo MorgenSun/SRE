@@ -103,7 +103,7 @@ systemctl restart mysqld.service
 
 defaultpass=$(grep "A temporary password is generated for root@localhost" /var/log/mysqld.log  | tail -n 1 | awk '{print $NF}')
 mysqladmin -uroot -p"${defaultpass}"  password Cgnpmiaczqs1!
-mysql -uroot -pCgnpmiaczqs1\! -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.31.%' identified by 'Genomics1\!' with grant option;"
+mysql -uroot -pCgnpmiaczqs1\! -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.31.%' identified by 'Cgnpmiaczqs1\!' with grant option;"
 mysql -uroot -pCgnpmiaczqs1! -e 'flush privileges;'
 mysql -uroot -pCgnpmiaczqs1! -e 'create database hive;'
 mysql -uroot -pCgnpmiaczqs1! -e 'create database nacos;'
