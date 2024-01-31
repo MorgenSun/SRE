@@ -60,7 +60,7 @@ if [ "$system" == "CentOS" ]; then
     systemctl status mysqld.service
     rm -rf mysql*
 
-    cat << EOF > /etc/my.cnf
+     cat << EOF > /etc/my.cnf
 [mysqld]
 character_set_server=utf8
 pid-file=/var/lib/mysql/mysqld.pid
@@ -113,13 +113,11 @@ elif [ "$system" == "Ubuntu" ]; then
     echo "The system is Ubuntu."
     apt-get -y install mysql-server-5.7
     cat << EOF > /etc/mysql/my.cnf
-!includedir /etc/mysql/conf.d/
-!includedir /etc/mysql/mysql.conf.d/
 [mysqld]
 character_set_server=utf8
 pid-file=/var/lib/mysql/mysqld.pid
 datadir=/var/lib/mysql
-socket=/var/lib/mysql/mysql.sock
+socket=/var/run/mysqld/mysqld.sock
 user=mysql
 default-time-zone='+8:00'
 symbolic-links=0
@@ -145,6 +143,7 @@ sql_mode=NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
 wait_timeout=3000
 interactive_timeout=28800
 [mysqld_safe]
+sock=/var/run/mysqld/mysqld.sock
 default-character-set=utf8
 log-error=/var/log/mysqld.log
 pid-file=/var/run/mysqld/mysqld.pid
@@ -154,10 +153,11 @@ default-character-set=utf8
 default-character-set=utf8
 EOF
 
-    systemctl enable mysql && systemctl start mysql
-    mysql -e -P9918 'alter user root@'localhost' identified with mysql_native_password by "Cgnpmiaczqs1!";'
+    systemctl enable mysql && systemctl restart mysql
+    mysql -P9918  -e "alter user root@'localhost' identified with mysql_native_password by 'Cgnpmiaczqs1\!';"
     mysql -uroot -P9918 -pCgnpmiaczqs1! -e 'flush privileges;'
-    mysql -uroot -P9918 -pCgnpmiaczqs1! -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.31.%' identified by 'Cgnpmiaczqs1!' with grant option;"
+    mysql -uroot -P9918 -pCgnpmiaczqs1! -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.31.%' identified by 'Cgnpmiaczqs1\!' with grant option;"
+    mysql -uroot -P9918 -pCgnpmiaczqs1! -e 'flush privileges;'
     mysql -uroot -P9918 -pCgnpmiaczqs1! -e 'create database nacos;'
     mysql -uroot -P9918 -pCgnpmiaczqs1! -e 'create database hive;'
 
